@@ -29,31 +29,26 @@ To run the project locally, follow these steps:
 
 1.  Clone the repository :
 
-    bash
    git clone https://github.com/your-username/ladoo.git
     
 
 2.  Navigate into the project directory :
 
-    bash
-   cd ladoo
+   cd my-app
     
 
 3.  Install dependencies :
 
    If you're using npm:
 
-    bash
    npm install
 
 4.  Start the development server :
 
    If you're using npm:
 
-    bash
    npm start
     
-
    This will start the React app and open it in your browser at `http://localhost:3000`.
 
 Check their documentation for the specific steps for deployment.
