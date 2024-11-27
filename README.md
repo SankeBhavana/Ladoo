@@ -1,6 +1,5 @@
 # Ladoo Website
 Ladoo
-Here's a basic `README.md` template for your Ladoo project. You can customize it as needed for your specific project:
 
 
 # Ladoo - Taste the Tradition
