@@ -1,0 +1,66 @@
+.home {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Custom Styles for Buttons */
+  button {
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  p{
+    color:#f57c00;
+  }
+  
+  /* Hero Section */
+  section.relative.bg-yellow-100 {
+    background-image: linear-gradient(to right, #ffeb3b, #fdd835);
+  }
+  
+  .container {
+    max-width: 1200px; /* Limit the width of the container */
+  }
+  
+  /* Aligning Images */
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Aligning Text */
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #f57c00;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  /* Grid Layout for Products */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Media Query for Mobile Adjustments */
+  @media (max-width: 768px) {
+    .lg\:w-1\/2 {
+      width: 100%;
+    }
+  
+    .text-center {
+      text-align: left;
+    }
+  }
+  

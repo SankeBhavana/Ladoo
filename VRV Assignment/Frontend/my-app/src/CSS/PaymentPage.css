@@ -1,0 +1,161 @@
+/* General styling for the payment page */
+.payment-page {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Title styling */
+  .payment-page h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Container for form and card to align them horizontally */
+  .payment-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  /* Form styling */
+  .payment-form .form-group {
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Label styling */
+  .payment-form label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  /* Input styling */
+  .payment-form input {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Input focus styles */
+  .payment-form input:focus {
+    border-color: #4CAF50;
+    background-color: #e8f5e9;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+    outline: none;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: #e53935;
+    font-size: 14px;
+    margin-top: 5px;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Submit button styling */
+  .submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  /* Submit button hover effect */
+  .submit-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+  }
+  
+  /* Animated card styling */
+  .card-preview {
+    width: 350px;
+    height: 220px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .card {
+    border-radius: 10px;
+    background: linear-gradient(145deg, #6a7a90, #4c5c70);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: white;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-header h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .card-body p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .card-body p strong {
+    color: #ffe600;
+  }
+  
+  /* Card animation for fade-in effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .payment-page {
+      padding: 20px;
+    }
+  
+    .payment-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .payment-form {
+      width: 100%;
+    }
+  
+    .card-preview {
+      width: 100%;
+    }
+  }
+  

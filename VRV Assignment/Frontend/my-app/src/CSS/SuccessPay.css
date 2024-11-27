@@ -1,0 +1,69 @@
+.success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .animation-container {
+    font-size: 60px;
+    animation: bounce 1s infinite;
+  }
+  
+  .success-message {
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #4CAF50;
+  }
+  
+  .success-message h2 {
+    font-size: 2rem;
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .success-message p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .confetti {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    z-index: 10;
+    animation: confetti 2s infinite;
+  }
+  
+  /* Confetti animation */
+  @keyframes confetti {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(100px) rotate(180deg);
+    }
+    100% {
+      transform: translateY(0) rotate(360deg);
+    }
+  }
+  
+  /* Bounce animation for success icon */
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

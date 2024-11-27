@@ -1,0 +1,174 @@
+/* General Body Styling */
+body {
+    background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Ingredient Section Layout */
+  .ingredient-section {
+    display: flex;
+    gap: 2rem; /* Gap between the dry fruits and seeds sections */
+    margin-top: 2rem;
+  }
+  
+  .ingredient-category {
+    flex: 1; /* Make each category take equal width */
+  }
+  
+  .ingredient-category-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6f61;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Styling for the ingredient cards */
+  .ingredient-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .ingredient-card {
+    position: relative;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid #ddd;
+  }
+  
+  .ingredient-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: #ffe6e6; /* Light pink background on hover */
+  }
+  
+  .ingredient-card.selected {
+    border-color: #ff6f61; /* Highlight selected card with a border color */
+  }
+  
+  /* Ingredient Name and Price Styling */
+  .ingredient-name,
+  .ingredient-price {
+    text-align: center;
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .ingredient-name {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: #e74c3c;
+  }
+  
+  .ingredient-price {
+    font-size: 1.1rem;
+    color: #27ae60;
+  }
+  
+  /* Hover Info - Nutritional Data */
+  .ingredient-hover-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for better contrast */
+    padding: 1rem;
+    border-radius: 8px;
+    color: #2c3e50;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ingredient-card:hover .ingredient-hover-info {
+    opacity: 1;
+  }
+  
+  /* Buttons & Interaction Styling */
+  button {
+    background-color: #ff6f61; /* Vibrant red */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e74c3c;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Summary Section Styling */
+  .summary-container {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  .summary-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .summary-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+  }
+  
+  .summary-item {
+    margin-bottom: 0.5rem;
+    color: #34495e;
+  }
+  
+  .total-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-top: 1rem;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #2ecc71; /* Green for positive action */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+  }
+  
+  .add-to-cart-btn:active {
+    transform: scale(0.98);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .ingredient-section {
+      flex-direction: column; /* Stack ingredient categories on smaller screens */
+    }
+  }
+  

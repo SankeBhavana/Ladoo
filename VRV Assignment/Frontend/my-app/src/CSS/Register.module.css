@@ -1,0 +1,149 @@
+/* Register.css */
+body {
+    background: linear-gradient(135deg, #eaf8f6, #d6e0f0); /* Mint green and lavender gradient */
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll due to animations */
+  }
+  
+  .container {
+    max-width: 500px;
+  }
+  
+  h1 {
+    font-family: 'Caveat', cursive; /* Playful font for heading */
+    font-size: 3rem;
+    text-align: center;
+    color: #7d85c7; /* Soft lavender */
+    margin-bottom: 1rem;
+    animation: bounce 2s infinite; /* Animate heading */
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .shadow {
+    background: #ffffff; /* Clean white background */
+    border: 3px solid #bcd4e6; /* Light teal border */
+    border-radius: 20px; /* Rounded edges */
+    padding: 30px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .shadow:hover {
+    transform: translateY(-10px); /* Subtle hover lift */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  label {
+    font-weight: bold;
+    color: #5d6d7e; /* Subtle gray-blue for labels */
+  }
+  
+  input {
+    border: 3px solid #bcd4e6; /* Light teal border */
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+  
+  input:focus {
+    border: 3px solid #7d85c7; /* Lavender border on focus */
+    outline: none;
+    transform: scale(1.05); /* Slight scale on focus */
+  }
+  
+  button {
+    background: linear-gradient(135deg, #bcd4e6, #d6e0f0); /* Subtle teal-lavender gradient */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #d6e0f0, #eaf8f6); /* Reverse gradient on hover */
+    transform: translateY(-5px); /* Button lift on hover */
+  }
+  
+  .alert {
+    background-color: #f4f9f8; /* Subtle mint green */
+    color: #5d6d7e; /* Calm gray-blue */
+    border: 1px solid #bcd4e6;
+    border-radius: 10px;
+    padding: 10px;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  p {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #5d6d7e;
+  }
+  
+  a {
+    color: #7d85c7; /* Lavender for links */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #bcd4e6; /* Light teal on hover */
+    text-decoration: underline;
+  }
+  
+  /* Background decorations */
+  body::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, #d6e0f0, transparent);
+    border-radius: 50%;
+    top: -100px;
+    left: -50px;
+    animation: ladooFloat 6s infinite ease-in-out;
+  }
+  
+  body::after {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, #eaf8f6, transparent);
+    border-radius: 50%;
+    bottom: -50px;
+    right: -30px;
+    animation: ladooFloat 6s infinite ease-in-out reverse;
+  }
+  
+  @keyframes ladooFloat {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+  }
+  

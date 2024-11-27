@@ -1,0 +1,74 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f4a261;
+    color: white;
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-links ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.navbar-links .btn-signup {
+    background-color: #e76f51;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.navbar-links .btn-signup:hover {
+    background-color: #d65a40;
+}
+
+.navbar-links.active {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: #f4a261;
+        padding: 1rem;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
